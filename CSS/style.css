@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: blue;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
