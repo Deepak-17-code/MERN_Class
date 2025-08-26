@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-h1{
+/* h1{
     background-color: blue;
-}
+} */
 
 .box{
     height: 100px;
@@ -21,4 +21,49 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.font-weight{
+    font-weight: bold;
+}
+
+.text-d{
+    text-decoration: blue line-through;
+}
+.font-s{
+    font-style: italic;
+}
+
+.text-t{
+    text-transform: uppercase;
+}
+
+.list-s{
+    list-style: disc;
+}
+
+.text-a{
+    text-align: center;
+}
+
+.line-h{
+    line-height:20px;
+}
+
+.letter-s{
+    letter-spacing: 8px;
+}
+.font-sz{
+    font-size: 2rem;
+}
+.type-E{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ff{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.color{
+    color: rgb(200, 120,100);
 }
