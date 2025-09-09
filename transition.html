@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Animation</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: purple;
+      transition: width 15s;
+    }
+
+    div:hover {
+      width: 400px;
+      animation: colorChange 15s forwards; 
+    }
+
+    @keyframes colorChange {
+      0%   { background-color: orange; }
+      33%  { background-color: red; }
+      66%  { background-color: brown; }
+      100% { background-color: brown; }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>hello</h1>
+  </div>
+</body>
+</html>
