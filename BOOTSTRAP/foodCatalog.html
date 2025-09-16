@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FoodCatalog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff9f9;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .hero .btn {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    .card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #dc3545;
+      color: #fff;
+      padding: 40px 0;
+      margin-top: 60px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons i {
+      font-size: 1.4rem;
+      margin: 0 10px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #ffe5e5;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">FoodCatalog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Fast Food</a></li>
+              <li><a class="dropdown-item" href="#">Desserts</a></li>
+              <li><a class="dropdown-item" href="#">Beverages</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search food...">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container">
+    <div class="hero">
+      <h1>Welcome to FoodCatalog</h1>
+      <p>Discover delicious meals, tasty desserts, and refreshing drinks – all in one place!</p>
+      <a href="#" class="btn btn-light btn-lg">Explore Menu</a>
+    </div>
+  </div>
+
+  
+  <div class="container my-5">
+    <div class="row g-4">
+      
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=781&auto=format&fit=crop" class="card-img-top" alt="Pizza">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pizza</h5>
+            <p class="card-text">Cheesy, oven-baked delight with your favorite toppings.</p>
+            <p class="fw-bold mt-auto">Price: ₹250</p>
+            <a href="#" class="btn btn-danger mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=880&auto=format&fit=crop" class="card-img-top" alt="Burger">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Burger</h5>
+            <p class="card-text">Juicy grilled patty layered with cheese and veggies.</p>
+            <p class="fw-bold mt-auto">Price: ₹180</p>
+            <a href="#" class="btn btn-danger mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=880&auto=format&fit=crop" class="card-img-top" alt="Pasta">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pasta</h5>
+            <p class="card-text">Creamy and flavorful Italian pasta cooked to perfection.</p>
+            <p class="fw-bold mt-auto">Price: ₹200</p>
+            <a href="#" class="btn btn-danger mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1630431341973-02e1b662ec35?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="French Fries">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">French Fries</h5>
+            <p class="card-text">Crispy golden fries served with ketchup.</p>
+            <p class="fw-bold mt-auto">Price: ₹120</p>
+            <a href="#" class="btn btn-danger mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=880&auto=format&fit=crop" class="card-img-top" alt="Salad">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Salad</h5>
+            <p class="card-text">Fresh and healthy vegetable salad with dressing.</p>
+            <p class="fw-bold mt-auto">Price: ₹150</p>
+            <a href="#" class="btn btn-danger mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=880&auto=format&fit=crop" class="card-img-top" alt="Coffee">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Coffee</h5>
+            <p class="card-text">Hot, freshly brewed coffee to energize your day.</p>
+            <p class="fw-bold mt-auto">Price: ₹100</p>
+            <a href="#" class="btn btn-danger mt-2">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <footer class="footer">
+    <div class="container text-center">
+      <h5 class="fw-bold mb-3">FoodCatalog</h5>
+      <p>Fresh, Tasty and Delivered with Love ❤️</p>
+      <div class="social-icons mb-3">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="mb-0">&copy; 2025 FoodCatalog. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
